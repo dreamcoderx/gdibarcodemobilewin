@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GDI_BARCODE", "GDI_BARCODE.vbproj", "{B04355FD-1840-405B-9B18-D5A6CBD8841A}"
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "gdi_cab", "..\gdi_cab\gdi_cab.vddproj", "{B42FB7F0-7130-4C1B-B5D3-5403C41F5813}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B04355FD-1840-405B-9B18-D5A6CBD8841A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B04355FD-1840-405B-9B18-D5A6CBD8841A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B04355FD-1840-405B-9B18-D5A6CBD8841A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B04355FD-1840-405B-9B18-D5A6CBD8841A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B04355FD-1840-405B-9B18-D5A6CBD8841A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B04355FD-1840-405B-9B18-D5A6CBD8841A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B42FB7F0-7130-4C1B-B5D3-5403C41F5813}.Debug|Any CPU.ActiveCfg = Debug
+		{B42FB7F0-7130-4C1B-B5D3-5403C41F5813}.Debug|Any CPU.Build.0 = Debug
+		{B42FB7F0-7130-4C1B-B5D3-5403C41F5813}.Release|Any CPU.ActiveCfg = Release
+		{B42FB7F0-7130-4C1B-B5D3-5403C41F5813}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

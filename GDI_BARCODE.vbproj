@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B04355FD-1840-405B-9B18-D5A6CBD8841A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>oraclebc.frmMenu</StartupObject>
+    <RootNamespace>oraclebc</RootNamespace>
+    <AssemblyName>oraclebc</AssemblyName>
+    <ProjectTypeGuids>{68B1623D-7FB9-47D8-8664-7ECEA3297D4F};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.02</OSVersion>
+    <MyType>WindowsForms</MyType>
+    <DeployDirSuffix>oracle</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>MODULES\Barcode.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>oraclebc.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>$(PlatformFamilyName)=TRUE</DefineConstants>
+    <DocumentationFile>oraclebc.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Intermec.DataCollection.CF3.5, Version=4.2.0.2217, Culture=neutral, PublicKeyToken=acd169b56b6148ba, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Intermec.DataCollection.CF3.5.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=3.0.3600.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MAIN\frmLogInAdmin.designer.vb">
+      <DependentUpon>frmLogInAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN\frmLogInAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN\frmMenu.designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN\frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WNETClass.vb" />
+    <Compile Include="INVENTORY\frmCount.designer.vb">
+      <DependentUpon>frmCount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTORY\frmCount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTORY\frmInvQry.designer.vb">
+      <DependentUpon>frmInvQry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTORY\frmInvQry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVENTORY\frmSeleOpenInventory.designer.vb">
+      <DependentUpon>frmSeleOpenInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INVENTORY\frmSeleOpenInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN\frmPassChange.designer.vb">
+      <DependentUpon>frmPassChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN\frmPassChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN\frmSettingsPass.designer.vb">
+      <DependentUpon>frmSettingsPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN\frmSettingsPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULES\BarcodeReaderFactory.vb" />
+    <Compile Include="MODULES\modConn.vb" />
+    <Compile Include="MODULES\Module1.vb" />
+    <Compile Include="MODULES\Sound.vb" />
+    <Compile Include="PICK_RELEASE\frmPick.designer.vb">
+      <DependentUpon>frmPick.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmPick.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmPickCancelInserted.designer.vb">
+      <DependentUpon>frmPickCancelInserted.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmPickCancelInserted.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmReleaseSoList.designer.vb">
+      <DependentUpon>frmReleaseSoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmReleaseSoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmReleaseQry.designer.vb">
+      <DependentUpon>frmReleaseQry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmReleaseQry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmPickQry.designer.vb">
+      <DependentUpon>frmPickQry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmPickQry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmSalesReturns.designer.vb">
+      <DependentUpon>frmSalesReturns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmSalesReturns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmReleaseSoList_x1.designer.vb">
+      <DependentUpon>frmReleaseSoList_x1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmReleaseSoList_x1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmRelease.designer.vb">
+      <DependentUpon>frmRelease.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmRelease.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmPickSoList.designer.vb">
+      <DependentUpon>frmPickSoList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PICK_RELEASE\frmPickSoList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN\frmLogIn.designer.vb">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN\frmLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN\frmSettings.designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN\frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MODULES\Settings.vb" />
+    <Compile Include="MAIN\frmCalc.Designer.vb">
+      <DependentUpon>frmCalc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN\frmCalc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RECEIVING\frmRecMiscelaneousList.designer.vb">
+      <DependentUpon>frmRecMiscelaneousList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RECEIVING\frmRecMiscelaneousList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RECEIVING\frmRecMisc.designer.vb">
+      <DependentUpon>frmRecMisc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RECEIVING\frmRecMisc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RECEIVING\frmRecDS.designer.vb">
+      <DependentUpon>frmRecDS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RECEIVING\frmRecDS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RECEIVING\frmRecPurRet.designer.vb">
+      <DependentUpon>frmRecPurRet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RECEIVING\frmRecPurRet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RECEIVING\frmRecStd.designer.vb">
+      <DependentUpon>frmRecStd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RECEIVING\frmRecStd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RECEIVING\frmRecLines.designer.vb">
+      <DependentUpon>frmRecLines.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RECEIVING\frmRecLines.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RETURN\frmPurchaseReturn.designer.vb">
+      <DependentUpon>frmPurchaseReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RETURN\frmPurchaseReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RETURN\frmRetSalesPurchase.designer.vb">
+      <DependentUpon>frmRetSalesPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RETURN\frmRetSalesPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RETURN\frmRetPurchLines.designer.vb">
+      <DependentUpon>frmRetPurchLines.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RETURN\frmRetPurchLines.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RETURN\frmRetPurch.designer.vb">
+      <DependentUpon>frmRetPurch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RETURN\frmRetPurch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="INVENTORY\frmCount.resx">
+      <DependentUpon>frmCount.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTORY\frmInvQry.resx">
+      <DependentUpon>frmInvQry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVENTORY\frmSeleOpenInventory.resx">
+      <DependentUpon>frmSeleOpenInventory.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN\frmLogInAdmin.resx">
+      <DependentUpon>frmLogInAdmin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN\frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN\frmPassChange.resx">
+      <DependentUpon>frmPassChange.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN\frmSettingsPass.resx">
+      <DependentUpon>frmSettingsPass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN\frmLogIn.resx">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN\frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICK_RELEASE\frmPick.resx">
+      <DependentUpon>frmPick.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICK_RELEASE\frmPickCancelInserted.resx">
+      <DependentUpon>frmPickCancelInserted.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICK_RELEASE\frmReleaseSoList.resx">
+      <DependentUpon>frmReleaseSoList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICK_RELEASE\frmReleaseQry.resx">
+      <DependentUpon>frmReleaseQry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICK_RELEASE\frmPickQry.resx">
+      <DependentUpon>frmPickQry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICK_RELEASE\frmSalesReturns.resx">
+      <DependentUpon>frmSalesReturns.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICK_RELEASE\frmReleaseSoList_x1.resx">
+      <DependentUpon>frmReleaseSoList_x1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICK_RELEASE\frmRelease.resx">
+      <DependentUpon>frmRelease.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PICK_RELEASE\frmPickSoList.resx">
+      <DependentUpon>frmPickSoList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN\frmCalc.resx">
+      <DependentUpon>frmCalc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RECEIVING\frmRecMiscelaneousList.resx">
+      <DependentUpon>frmRecMiscelaneousList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RECEIVING\frmRecMisc.resx">
+      <DependentUpon>frmRecMisc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RECEIVING\frmRecDS.resx">
+      <DependentUpon>frmRecDS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RECEIVING\frmRecPurRet.resx">
+      <DependentUpon>frmRecPurRet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RECEIVING\frmRecStd.resx">
+      <DependentUpon>frmRecStd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RECEIVING\frmRecLines.resx">
+      <DependentUpon>frmRecLines.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RETURN\frmPurchaseReturn.resx">
+      <DependentUpon>frmPurchaseReturn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RETURN\frmRetSalesPurchase.resx">
+      <DependentUpon>frmRetSalesPurchase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RETURN\frmRetPurchLines.resx">
+      <DependentUpon>frmRetPurchLines.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RETURN\frmRetPurch.resx">
+      <DependentUpon>frmRetPurch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gdi barcode revision.txt" />
+    <Content Include="MODULES\Barcode.ico" />
+    <Content Include="Settings.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tut.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tututut.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{F184B08F-C81C-45F6-A57F-5ABD9991F28F}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="PlatformVerificationTask">
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

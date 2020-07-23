@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="settings_pass" value="tl1c" />
+    <add key="mssql" value="Data Source=192.168.1.128,1433;Initial Catalog=dunkin;User ID=root;Password=root" />
+    <add key="sql_server" value="gdiwhbcsrv,1433" />
+    <add key="sql_dbase" value="dunkin" />
+    <add key="sql_user" value="root" />
+    <add key="sql_password" value="root" />
+  </appSettings>
+</configuration>
